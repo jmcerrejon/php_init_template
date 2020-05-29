@@ -1,3 +1,3 @@
 <?php 
-    $dotenv = Dotenv\Dotenv::create(dirname(__DIR__));
-    $dotenv->load();
+	$dotenv = Dotenv\Dotenv::createMutable(dirname(__DIR__, 1))
+	->safeLoad();
